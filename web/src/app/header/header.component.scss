@@ -1,0 +1,23 @@
+:host {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+mat-toolbar {
+  height: 50px;
+}
+
+mat-icon {
+  padding-right: 5px;
+}
+
+a:hover {
+  background: rgba(0, 0, 0, .4);
+}
+
+.current {
+  background: rgba(0, 0, 0, .2)
+}
