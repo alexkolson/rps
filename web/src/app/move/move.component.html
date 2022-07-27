@@ -1,14 +1,14 @@
 <mat-card>
   <mat-card-header>
     <mat-card-title>
-      {{title}}
+      {{move}}
     </mat-card-title>
   </mat-card-header>
   <img mat-card-image src="{{image}}" />
   <mat-card-content>
   </mat-card-content>
   <mat-card-actions>
-    <button mat-button>
+    <button mat-button (click)="playGame()">
       Select
     </button>
   </mat-card-actions>

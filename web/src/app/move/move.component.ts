@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { GameService } from '../game/game.service';
+import { Game, GameService } from '../game/game.service';
 
 @Component({
   selector: 'app-move',
@@ -7,10 +7,21 @@ import { GameService } from '../game/game.service';
   styleUrls: ['./move.component.scss']
 })
 export class MoveComponent implements OnInit {
-  @Input() title?: string;
-  @Input() image?: string;
+  @Input() move!: string;
+  @Input() image!: string;
 
-  constructor(gameService: GameService) { }
+  constructor(private gameService: GameService) { }
+
+  playGame() {
+    this
+      .gameService
+      .play(this.move)
+      .subscribe(this.gameHandler);
+  }
+
+  gameHandler(game: Game) {
+    console.log(game);
+  }
 
   ngOnInit(): void {
   }
