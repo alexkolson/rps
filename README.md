@@ -9,8 +9,10 @@ To run the app, clone the repository, cd into `backend`, `./mvnw clean package`,
 A few things I still want to do:
 
 - [ ] Switch to postgres from h2
-- [ ] Make statistics page prettier!!
+- [ ] Display game win/loss status nicer
+- [ ] Make statistics page prettier
 - [ ] Add some small animations to frontend
 - [ ] Add user auth so multiple users can play game (maybe)
 - [ ] Dockerize
 - [ ] Test observability endpoints with Spring Boot Admin Server
+- [ ] Maybe hookup Grafana
