@@ -1,6 +1,6 @@
 import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable, throwError, catchError } from 'rxjs';
+import { throwError, catchError, BehaviorSubject, Observable } from 'rxjs';
 
 export interface Game {
   id?: number;
@@ -15,7 +15,9 @@ export interface Game {
 export class GameService {
   host = 'http://localhost:8080';
 
-  constructor(private httpClient: HttpClient) {}
+  lastPlayedGame = new BehaviorSubject<Game | null>(null);
+
+  constructor(private httpClient: HttpClient) { }
 
   play(move: string): Observable<Game> {
     const game: Game = {

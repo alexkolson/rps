@@ -16,11 +16,11 @@ export class MoveComponent implements OnInit {
     this
       .gameService
       .play(this.move)
-      .subscribe(this.gameHandler);
+      .subscribe((game) => this.gameHandler(game));
   }
 
   gameHandler(game: Game) {
-    console.log(game);
+    this.gameService.lastPlayedGame.next(game);
   }
 
   ngOnInit(): void {

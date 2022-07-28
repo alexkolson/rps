@@ -14,6 +14,7 @@ import { HeaderComponent } from './header/header.component';
 import { MoveComponent } from './move/move.component';
 import { GameService } from './game/game.service';
 import { ContentComponent } from './content/content.component';
+import { StatisticsComponent } from './statistics/statistics.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { ContentComponent } from './content/content.component';
     GameComponent,
     HeaderComponent,
     MoveComponent,
-    ContentComponent
+    ContentComponent,
+    StatisticsComponent
   ],
   imports: [
     BrowserModule,
