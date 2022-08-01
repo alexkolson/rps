@@ -15,6 +15,7 @@ import { MoveComponent } from './move/move.component';
 import { GameService } from './game/game.service';
 import { ContentComponent } from './content/content.component';
 import { StatisticsComponent } from './statistics/statistics.component';
+import { AgChartsAngularModule } from 'ag-charts-angular';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { StatisticsComponent } from './statistics/statistics.component';
     MatToolbarModule,
     MatButtonModule,
     MatCardModule,
-    HttpClientModule
+    HttpClientModule,
+    AgChartsAngularModule
   ],
   providers: [GameService],
   bootstrap: [AppComponent]
