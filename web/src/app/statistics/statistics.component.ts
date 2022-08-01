@@ -66,7 +66,6 @@ export class StatisticsComponent implements OnInit {
     this.gameService.getAllGames().subscribe((games) => {
       this.gameStats = games;
       this.chartOpts = this.getChartOptions();
-      console.log(this.chartOpts);
     })
   }
 
