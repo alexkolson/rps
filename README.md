@@ -10,7 +10,7 @@ A few things I still want to do:
 
 - [ ] Switch to postgres from h2
 - [ ] Display game win/loss status nicer
-- [ ] Make statistics page prettier
+- [x] Make statistics page prettier
 - [ ] Add some small animations to frontend
 - [ ] Add user auth so multiple users can play game (maybe)
 - [ ] Dockerize
